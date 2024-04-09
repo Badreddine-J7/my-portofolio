@@ -1,2 +1,2 @@
 # my-portofolio
-my portofolio with github
+my first portofolio with github

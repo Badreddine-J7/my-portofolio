@@ -173,7 +173,7 @@ a.active {
   }
 }
 /*------ large screens----*/
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .header {
     padding: 12px 80px;
   }
@@ -369,4 +369,204 @@ section {
 .footer .social-icons a i {
   font-size: 1.3em;
   padding: 0 12px 0 0;
+}
+/*------------------------- login page -------------------*/
+.backlog {
+  background-image: url(yes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+form.login {
+  opacity: 0.8;
+  background-color: #fff;
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 65%;
+  height: 600px;
+  border: 5px solid gainsboro;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+.imglog {
+  opacity: 0.9;
+  width: 50%;
+  height: 100%;
+  border-radius: 45px 0 0 45px;
+}
+.textlog {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.textlog h2 {
+  color: #601cfc;
+  font-size: 32px;
+  margin: 25px 0;
+}
+.textlog h3 {
+  color: #000;
+  font-size: 22px;
+}
+.textlog h3 span {
+  color: #601cfc;
+  font-size: 28px;
+}
+.usr,
+.pw {
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+  border-bottom: 1px solid red;
+  font-size: 18px;
+}
+.forpw {
+  color: #601cfc;
+  margin: 15px 0;
+  font-size: 20px;
+  align-self: flex-end;
+}
+.sub,
+.res {
+  margin: 15px 10px;
+  width: 40%;
+  font-size: 16px;
+  background-color: #601cfc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3 ease;
+}
+.sub:hover,
+.res:hover {
+  transform: scale(1.1);
+}
+.create {
+  color: #601cfc;
+  font-size: 20px;
+  margin-top: 20px;
+}
+/*----------- media login -------------*/
+@media (max-width: 700px) {
+  form.login {
+    top: 150px;
+    width: 80%;
+    height: 500px;
+  }
+  .imglog {
+    display: none;
+  }
+  .textlog {
+    width: 100%;
+    margin: 0 30px;
+  }
+  .textlog h2 {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .textlog h3 {
+    font-size: 18px;
+  }
+  .textlog h3 span {
+    font-size: 22px;
+  }
+  .usr,
+  .pw {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .forpw {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .sub,
+  .res {
+    margin: 10px;
+    width: 40%;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .create {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+/*------------- media 400px login --------------*/
+@media (max-width: 400px) {
+  .textlog {
+    margin: 5px 10px;
+  }
+  .textlog h2 {
+    font-size: 22px;
+    margin: 8px 0;
+  }
+  .textlog h3 {
+    font-size: 16px;
+  }
+  .textlog h3 span {
+    font-size: 18px;
+  }
+  .usr,
+  .pw {
+    padding: 5px;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  .forpw {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  .sub,
+  .res {
+    margin: 8px;
+    width: 40%;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .create {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+/*------------- large media 1200px login -----------------*/
+@media (max-width: 1200px) {
+  form.login {
+    width: 90%;
+  }
+  .textlog h2 {
+    font-size: 30px;
+  }
+  .textlog h3 {
+    font-size: 20px;
+  }
+  .textlog h3 span {
+    font-size: 26px;
+  }
+  .usr,
+  .pw {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .forpw {
+    font-size: 18px;
+  }
+  .sub,
+  .res {
+    margin: 15px 5px;
+  }
+  .create {
+    font-size: 18px;
+  }
 }

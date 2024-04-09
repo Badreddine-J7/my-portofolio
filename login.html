@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="my store here we have all you need">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header"> 
+        <nav class="navigation">
+            <input type="checkbox" id="check">  
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <a class="logo" href="#">BADR_JALYL</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="backlog">
+        <form class="login" method="post">
+            <img class="imglog" src="imgs/back.jpg" alt="">
+            <div class="textlog">
+                <h2>hello! welcome</h2>
+                <h3><span>login</span> your account</h3>
+                <input class="usr" type="text" placeholder="UserName" autofocus required minlength="15" maxlength="30" title="write your email"> 
+                <input class="pw" type="password" placeholder="Password" pattern=".{8,12}" required title="write your password 8 a 12 characters">
+                <a class="forpw" href="">Forget password?</a>
+                <div class="but">
+                    <input class="sub" type="submit" value="Login">
+                    <input class="res" type="reset" value="clear">
+                </div>
+                <a class="create" href="">Create Account</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
